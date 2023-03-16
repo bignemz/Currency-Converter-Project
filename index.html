@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/dafe86099d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
+   
+   
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="main">
+        <h1>Currency Converter</h1>
+        <form class="exchange">
+            <label for="amount">Enter Amount</label>
+            <br>
+            <input type="number" id="amount" class="input" name="amount">
+            <br>
+    
+            <div class="items">
+                <span class="from">
+                    <label for="from">From:</label>
+                
+                    <select class="select"  id="from">
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="JPY">JPY</option>
+                    </select>
+                </span>
+           <span>   <i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+            <span class="to">
+                <label for="to">To:</label>
+              
+                <select class="select"  id="to">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                </select>
+            </span>
+            </div>
+    
+        
+    
+    <div class="rate"><span>Display Exchange rate</span></div>
+          <br><br>
+          <button class="btn" type="button" >Get Exchange Rate</button>
+        </form>
+    </div>
+   
+    <br>
+    <div id="result"></div>
+
+   
+  </body>
+</html>
